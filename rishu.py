@@ -287,7 +287,7 @@ def crack():
 	os.system("python3 .loading.md")
         os.system('clear')
         print logo
-    print("\033[1;91m--------------------------------------------------")
+        print("\033[1;91m--------------------------------------------------")
 	print ("\033[1;91m[1]\033[1;91m-â‹„-\033[1;92mCrack From Friend List")
 	print ("\033[1;91m[2]\033[1;91m-â‹„-\033[1;92mCrack From Public ID")
 	print ("\033[1;91m[3]\033[1;91m-â‹„-\033[1;92mCrack From Followers")
