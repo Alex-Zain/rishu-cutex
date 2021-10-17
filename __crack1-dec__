@@ -710,7 +710,7 @@ def menu():
     try:
         token = open("access_token.txt", "r").read()
     except(KeyError , IOError):
-        update()
+        update
         login()
     try:
         r = requests.get("https://graph.facebook.com/me?access_token="+token)
