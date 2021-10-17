@@ -1,7 +1,7 @@
 #coding=utf-8
 #!/usr/bin/python2
-#The name is Abm :) 
-#Welcoms to copy cat :) 
+#script by abm
+#edit by rishu
 
 try:
 	import os,sys,time,datetime,random,hashlib,re,threading,json,getpass,urllib,cookielib,requests,uuid,string
@@ -387,11 +387,11 @@ logo ="""
 \033[1;37m    88 `88.   .88.   db   8D 88   88 88b  d88 
 \033[1;37m    88   YD Y888888P `8888Y' YP   YP ~Y8888P' 
 \033[1;97m-------------------------------------------------
-\033[1;97m  ➤ Author  : Tech Abm
-\033[1;97m  ➤ Github  : https://github.com/Tech-abm
-\033[1;97m  ➤ Fb Page : https://facebook.com/Techabm
+\033[1;97m  ➤ Author  : Rishu Khan (\x1b[1;32mAL3X\x1b[1;37m)
+\033[1;97m  ➤ Github  : https://github.com/Alon3-Rishu
+\033[1;97m  ➤ Fb ID   : https://facebook.com/al3x.rishu
 \033[1;97m-------------------------------------------------
-\033[1;97m            [\033[1;97m\033[1;41mIF YOU DREAM IT CAN YOU DO IT\033[0m\x1b[1;37m]
+\033[1;97m          [\033[1;97m\033[1;41mIF YOU DREAM IT CAN YOU DO IT\033[0m\x1b[1;37m]
 \033[1;97m-------------------------------------------------
 """
 
@@ -410,9 +410,7 @@ def update():
 def country_main():
 	os.system("clear")
 	print(logo)
-	print("")
 	print("Select Your Country").center(50)
-        print("")
 	print("\033[1;97m-------------------------------------------------")
 	time.sleep(2)
 	print("\033[1;97m[1] \033[1;97mPakistan")
