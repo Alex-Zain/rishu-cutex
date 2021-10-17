@@ -410,7 +410,7 @@ def update():
 def country_main():
 	os.system("clear")
 	print(logo)
-	print("Select Your Country").center(50)
+	print("Select Your Country")
 	print("\033[1;97m-------------------------------------------------")
 	time.sleep(2)
 	print("\033[1;97m[1] \033[1;97mPakistan")
@@ -523,9 +523,7 @@ def sct():
 def agnets():
 	os.system("clear")
 	print(logo)
-	print("")
-	print("\x1b[1;32mSelect anyone option that you want to cloning").center(50)
-	print("")
+	print("\x1b[1;32mSelect anyone option that you want to cloning")
         print("\033[1;97m-------------------------------------------------")
 	time.sleep(2)
 	print("\033[1;97m[1] Cloning With User-agents 01 (\x1b[1;32mfast method\x1b[1;37m) ")
