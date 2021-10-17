@@ -711,9 +711,9 @@ def menu():
     except(KeyError , IOError):
         update()
     try:
-		      r= requests.get("https://graph.facebook.com/me?access_token="+token)
-		      q = json.loads(r.text)
-		      name = q["name"]
+        r = requests.get("https://graph.facebook.com/me?access_token="+token)
+        q = json.loads(r.text)
+        name = q["name"]
     except(KeyError):
         print(logo)
         print("")
